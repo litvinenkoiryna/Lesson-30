@@ -62,32 +62,51 @@ alert(needToBuyList.map(e =>e.name));*/
 console.log(list)
 alert(list.map(e => e.name));*/
 
-// сума покупки
-// let total_sum = 0
-// list.forEach(function(order){
-//     list.forEach(function(item){
-//         if(item.bought === true){
-//         total_sum += item.sum} // cума покупок , що bought === true
-//         return total_sum
-//     })
-//     console.log(total_sum)
-//     total_sum = 0
-// })
-
 //Видалення продукту зі списку (видалення повинно проводитися шляхом створення
 // нового масиву, в якому продукт, що ми шукаємо, буде відсутнім)
 
 
-// list.splice(6,1);
-// let newListItem = list;
-//
-// console.log(newListItem);
-//
-// let item = newListItem.find(function(value){return value === newListItem.name;});
-// if(item === undefined)alert('немає в списку');
-// else alert('є в списку');
-// console.log(item);
+/*list.splice(6,1);
+let newListItem = list;
+console.log(newListItem);
+
+function addProd(prodName){
+
+let s = newListItem.find(function (value){
+    return value.name === prodName  });
+    if (s === undefined) alert("not in the list");
+    else alert('this prod is in the list');}
+addProd(prompt("Add name"))*/
+
+
+/*Додавання покупки в список. Враховуй, що при додаванні покупки з уже існуючим в списку продуктом,
+ необхідно збільшувати кількість в існуючій покупці, а не додавати нову. При цьому також повинна змінитися сума,
+наприклад, якщо ціна за одиницю 12, а кількості товарів стало 2, то сума буде 24.*/
+
+//Зовсім не вийшло :(
 
 
 
+// сума покупки всіх продуктів
+/*let total_sum = 0
+list.forEach(function(order){
+    list.forEach(function(item){
+        total_sum += item.sum // cума покупок , що bought === true
+        return total_sum
+    })
+    console.log(total_sum.toFixed(2)) // 731.70
+    total_sum = 0
+})
+// сума покупки непридбаних продуктів
+
+let totall_sum = 0
+list.forEach(function(order){
+    list.forEach(function(item){
+        if(item.bought === false){
+            totall_sum += item.sum }// cума покупок , що bought === false
+        return totall_sum
+    })
+    console.log(totall_sum.toFixed(2)) // 424.30
+    totall_sum = 0
+})*/
 
