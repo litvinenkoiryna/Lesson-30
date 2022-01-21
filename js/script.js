@@ -110,3 +110,15 @@ list.forEach(function(order){
     totall_sum = 0
 })*/
 
+//Показання продуктів в залежності від суми, (від більшого до меншого / від меншого до більшого,
+   // в залежності від параметра функції, який вона приймає)
+// numberArray.sort(compareNumbers)
+/*list.sort(function (a, b) {
+    if (a.sum > b.sum) {
+        return 1;}
+    if (a.sum < b.sum) {
+        return -1;}
+    return 0;
+});
+console.log(list.sort());*/
+
